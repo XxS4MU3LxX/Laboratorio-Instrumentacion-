@@ -51,6 +51,7 @@ La tarjeta de adquisición de datos se conectó al computador mediante un cable 
 𝙎𝙚𝙣̃𝙖𝙡 𝙚𝙣 𝙎𝙚𝙧𝙞𝙖𝙡 𝙋𝙡𝙤𝙩𝙩𝙚𝙧 (𝙍𝙚𝙥𝙤𝙨𝙤-𝙃𝙖𝙗𝙡𝙖)
 
 𝙀𝙣 𝙧𝙚𝙥𝙤𝙨𝙤
+
 Durante la respiración normal en reposo:
 
 . La señal presentó un comportamiento periódico y relativamente estable.
@@ -62,6 +63,7 @@ Durante la respiración normal en reposo:
 . El conteo manual permitió estimar una frecuencia aproximada de ___ respiraciones por minuto.
 
 𝘿𝙪𝙧𝙖𝙣𝙩𝙚 𝙚𝙡 𝙝𝙖𝙗𝙡𝙖
+
 Mientras el sujeto leía en voz alta:
 
 . La señal mostró mayor irregularidad.
