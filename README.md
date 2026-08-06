@@ -48,5 +48,28 @@ La tarjeta de adquisición de datos se conectó al computador mediante un cable 
 
 <img width="1600" height="1517" alt="image" src="https://github.com/user-attachments/assets/d5235421-b084-4b6c-b285-17cefd69981e" />
 
+𝙎𝙚𝙣̃𝙖𝙡 𝙚𝙣 𝙎𝙚𝙧𝙞𝙖𝙡 𝙋𝙡𝙤𝙩𝙩𝙚𝙧 (𝙍𝙚𝙥𝙤𝙨𝙤-𝙃𝙖𝙗𝙡𝙖)
 
-## Lectura realizada por el participante 
+𝙀𝙣 𝙧𝙚𝙥𝙤𝙨𝙤
+Durante la respiración normal en reposo:
+
+. La señal presentó un comportamiento periódico y relativamente estable.
+
+. Se observaron ciclos regulares correspondientes a inhalación y exhalación.
+
+. La amplitud fue constante.
+
+. El conteo manual permitió estimar una frecuencia aproximada de ___ respiraciones por minuto.
+
+𝘿𝙪𝙧𝙖𝙣𝙩𝙚 𝙚𝙡 𝙝𝙖𝙗𝙡𝙖
+Mientras el sujeto leía en voz alta:
+
+. La señal mostró mayor irregularidad.
+
+. Se observaron variaciones en la amplitud.
+
+. Se prolongaron las fases de espiración (debido a la fonación).
+
+. La frecuencia respiratoria presentó cambios respecto al estado de reposo.
+
+Esto confirma que el habla modifica el patrón respiratorio al introducir un control voluntario sobre el proceso automático de respiración.
