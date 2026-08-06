@@ -31,7 +31,10 @@ La respiración es un proceso vital para el funcionamiento normal en todos los n
 
 <img width="381" height="492" alt="image" src="https://github.com/user-attachments/assets/b69d795f-27fe-4837-9808-36ea78e3302e" />
 
-
 ## Consentimiento informado del participante 
+Debido a que la práctica involucró la adquisición de datos fisiológicos mediante el registro de la frecuencia respiratoria utilizando un sensor MQ-135 y una máscara, fue necesario obtener el consentimiento informado del participante. Este documento garantiza que la persona comprendió el objetivo del experimento, el procedimiento a realizar, el uso académico de los datos recolectados y la confidencialidad de la información, asegurando una participación libre y voluntaria de acuerdo con los principios éticos de la investigación.
+
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/8a69872f-8bd8-4ed0-a155-337248a09a5a" />
+
 ## Montaje
 ## Lectura realizada por el participante 
