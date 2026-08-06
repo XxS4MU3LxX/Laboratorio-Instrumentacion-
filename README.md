@@ -36,5 +36,14 @@ Debido a que la práctica involucró la adquisición de datos fisiológicos medi
 
 <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/8a69872f-8bd8-4ed0-a155-337248a09a5a" />
 
-## Montaje
+𝙈𝙤𝙣𝙩𝙖𝙟𝙚 𝙚𝙭𝙥𝙚𝙧𝙞𝙢𝙚𝙣𝙩𝙖𝙡
+
+Para la adquisición de la señal respiratoria se implementó un montaje compuesto por un sensor de gases MQ-135, una máscara de oxígeno, una tarjeta de adquisición de datos National Instruments USB-6002 y un computador para el procesamiento de la información.
+
+El sensor MQ-135 se fijó en la parte inferior de la máscara, de manera que quedara expuesto al aire exhalado por el participante. La salida analógica del sensor se conectó a una entrada analógica (AI0) de la tarjeta NI USB-6002, mientras que la alimentación del sensor se realizó mediante una fuente de 5 V y se compartió la referencia de tierra (GND) con la DAQ para garantizar una medición estable.
+
+La tarjeta de adquisición de datos se conectó al computador mediante un cable USB, permitiendo la captura de la señal analógica generada por el sensor. Inicialmente, el correcto funcionamiento del montaje se verificó mediante el panel de pruebas de NI MAX, observando la variación del voltaje producida por los ciclos de inspiración y espiración. Posteriormente, la adquisición de los datos se realizó desde MATLAB para su visualización y posterior análisis de la frecuencia respiratoria.
+
+<img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/b28efbdb-ec2b-4c58-bfb9-5586b34d281c" />
+
 ## Lectura realizada por el participante 
