@@ -44,6 +44,7 @@ El sensor MQ-135 se fijó en la parte inferior de la máscara, de manera que que
 
 La tarjeta de adquisición de datos se conectó al computador mediante un cable USB, permitiendo la captura de la señal analógica generada por el sensor. Inicialmente, el correcto funcionamiento del montaje se verificó mediante el panel de pruebas de NI MAX, observando la variación del voltaje producida por los ciclos de inspiración y espiración. Posteriormente, la adquisición de los datos se realizó desde MATLAB para su visualización y posterior análisis de la frecuencia respiratoria.
 
-<img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/b28efbdb-ec2b-4c58-bfb9-5586b34d281c" />
+<img width="1600" height="1517" alt="image" src="https://github.com/user-attachments/assets/d5235421-b084-4b6c-b285-17cefd69981e" />
+
 
 ## Lectura realizada por el participante 
