@@ -151,6 +151,9 @@ xlabel('Tiempo (s)')
 ylabel('Voltaje (V)')
 grid on
 ```
+La función findpeaks identifica los máximos locales de la señal, cada pico representa aproximadamente un ciclo respiratorio.
+
+Posteriormente se calcula la frecuencia.
 ```
 FRECUENCIA RESPIRATORIA (TIEMPO - PICOS)
 [pks_r, locs_r] = findpeaks(x_r, t_r);
@@ -162,8 +165,11 @@ frec_h = length(pks_h) / dur_h;
 rpm_r = frec_r * 60;
 rpm_h = frec_h * 60;
 ```
+Para complementar el análisis temporal se emplea la Transformada Rápida de Fourier, donde la FFT transforma la señal del dominio del tiempo al dominio de la frecuencia.
+
+
 ```
-% 7. FRECUENCIA DOMINANTE (FFT)
+% FRECUENCIA DOMINANTE (FFT)
 fs = dq.Rate;
 %  RELAJACIÓN 
 N_r = length(x_r);
@@ -184,12 +190,12 @@ half_h = 1:floor(N_h/2);
 f_dom_h = f_h(idx_h);
 ```
 **Resultados**
->El programa muestra en pantalla:
-Con el propósito de relajarse:
+> El programa muestra en pantalla:
+> Con el propósito de relajarse:
 -Frecuencia respiratoria determinada a través de los picos.
 -Frecuencia predominante lograda a través de la FFT.
 
-Para hablar:
+> Para hablar:
 -Frecuencia de la respiración por picos.
 -Frecuencia predominante por medio de la FFT.
 
