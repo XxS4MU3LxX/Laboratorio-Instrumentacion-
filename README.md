@@ -42,8 +42,8 @@ Aunque el sensor no está diseñado como un sensor médico ni permite cuantifica
 𝘾𝙤𝙣𝙨𝙚𝙣𝙩𝙞𝙢𝙞𝙚𝙣𝙩𝙤 𝙞𝙣𝙛𝙤𝙧𝙢𝙖𝙙𝙤 𝙙𝙚𝙡 𝙥𝙖𝙧𝙩𝙞𝙘𝙞𝙥𝙖𝙣𝙩𝙚 
 
 Debido a que la práctica involucró la adquisición de datos fisiológicos mediante el registro de la frecuencia respiratoria utilizando un sensor MQ-135 y una máscara, fue necesario obtener el consentimiento informado del participante. Este documento garantiza que la persona comprendió el objetivo del experimento, el procedimiento a realizar, el uso académico de los datos recolectados y la confidencialidad de la información, asegurando una participación libre y voluntaria de acuerdo con los principios éticos de la investigación.
+<img width="1130" height="1535" alt="image" src="https://github.com/user-attachments/assets/aa444c3b-a480-4891-9a1a-c57afc1d2bf5" />
 
-<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/8a69872f-8bd8-4ed0-a155-337248a09a5a" />
 
 𝙈𝙤𝙣𝙩𝙖𝙟𝙚 𝙚𝙭𝙥𝙚𝙧𝙞𝙢𝙚𝙣𝙩𝙖𝙡
 
