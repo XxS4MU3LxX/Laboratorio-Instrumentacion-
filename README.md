@@ -1,9 +1,9 @@
 ## Laboratorio_1_Monitoreo del patrón y frecuencia respiratoria 
 # **Integrantes**
 >
-* María Angélica Vargas Saldaña
+* María Angélica Vargas Saldaña 5600820
 * Samuel Esteban Fonseca Luna 5600808
-* Laura Daniela Triana Molano
+* Laura Daniela Triana Molano 5600
 
 <h2 align="center">𝙞𝙣𝙩𝙧𝙤𝙙𝙪𝙘𝙘𝙞ó𝙣</h2>
 En este laboratorio se analizó el patrón y la frecuencia respiratoria mediante la adquisición de una señal biológica usando un sensor mq135 y adq. Posteriormente, la señal se procesó en MATLAB para observar su comportamiento en el tiempo y la frecuencia, comparando condiciones de reposo y habla. Esta práctica brinda una base teórica y aplicada sobre el monitoreo respiratorio, permitiendo comprender su relevancia dentro de la instrumentación biomédica y su utilidad en contextos reales de evaluación fisiológica.
