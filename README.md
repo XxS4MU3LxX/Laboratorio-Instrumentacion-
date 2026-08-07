@@ -72,7 +72,7 @@ Mientras el sujeto leía en voz alta:
 
 *Se prolongaron las fases de espiración (debido a la fonación).
 
-*La frecuencia respiratoria presentó cambios respecto al estado de reposo.
++ La frecuencia respiratoria presentó cambios respecto al estado de reposo.
 
 Esto confirma que el habla modifica el patrón respiratorio al introducir un control voluntario sobre el proceso automático de respiración.
 
