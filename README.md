@@ -133,6 +133,11 @@ El empleo de diversos sensores posibilita mejorar la **exactitud** y fiabilidad 
 Otro beneficio significativo es que la información adquirida es más completa y puede compararse entre los distintos sensores. Un solo sensor brinda datos restringidos, pero la combinación de diversas señales permite que se detecten sucesos como patrones respiratorios irregulares o la apnea del sueño, puesto que estos pueden ser identificados con más exactitud cuando se correlaciona la información que llega de distintos orígenes.
 Además el uso de múltiples sensores, además, fortalece el sistema. Si uno de los sensores tiene un error o reporta información incorrecta, los demás siguen tomando mediciones, lo que asegura la continuidad del monitoreo y previene que se pierda información.
 
+**DESVENTAJAS**
+>
+El uso de múltiples sensores también presenta algunas desventajas.En primer lugar, incrementa el costo total del sistema debido a la incorporación de más componentes electrónicos. Asimismo, aumenta la complejidad del diseño, ya que es necesario sincronizar las señales provenientes de cada sensor y procesarlas de manera conjunta, lo que requiere algoritmos más elaborados y una mayor cantidad de líneas de programación.
+
+
 
 <h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 𝘾 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
 
