@@ -54,23 +54,23 @@ La tarjeta de adquisición de datos se conectó al computador mediante un cable 
 
 Durante la respiración normal en reposo:
 
-*La señal presentó un comportamiento periódico y relativamente estable.
++ La señal presentó un comportamiento periódico y relativamente estable.
 
-*Se observaron ciclos regulares correspondientes a inhalación y exhalación.
++ Se observaron ciclos regulares correspondientes a inhalación y exhalación.
 
-*La amplitud fue constante.
++ La amplitud fue constante.
 
-*El conteo manual permitió estimar una frecuencia aproximada de ___ respiraciones por minuto.
++ El conteo manual permitió estimar una frecuencia aproximada de ___ respiraciones por minuto.
 
 𝘿𝙪𝙧𝙖𝙣𝙩𝙚 𝙚𝙡 𝙝𝙖𝙗𝙡𝙖
 
 Mientras el sujeto leía en voz alta:
 
-*La señal mostró mayor irregularidad.
++ La señal mostró mayor irregularidad.
 
-*Se observaron variaciones en la amplitud.
++ Se observaron variaciones en la amplitud.
 
-*Se prolongaron las fases de espiración (debido a la fonación).
++ Se prolongaron las fases de espiración (debido a la fonación).
 
 + La frecuencia respiratoria presentó cambios respecto al estado de reposo.
 
@@ -82,14 +82,16 @@ Este proyecto implementa un sistema de adquisición de señal respiratoria utili
 
 El objetivo del script en MATLAB es:
 
-Capturar la señal durante un tiempo definido.
++ Capturar la señal durante un tiempo definido.
 
-Visualizarla.
++ Visualizarla.
 
-Guardarla en un archivo .mat.
++ Guardarla en un archivo .mat.
 
-Permitir análisis posterior (filtrado, FFT y cálculo de frecuencia respiratoria)
-El flujo del sistema es:
++ Permitir análisis posterior (filtrado, FFT y cálculo de frecuencia respiratoria)
 
-Sensor → ESP32 (ADC 12 bits) → Arduino IDE → Serial USB → MATLAB → Archivo .mat
-La ESP32 digitaliza la señal analógica del sensor respiratorio y la envía como valores numéricos por puerto serial. MATLAB recibe esos valores, los grafica en tiempo real y los almacena.
+𝙀𝙡 𝙛𝙡𝙪𝙟𝙤 𝙙𝙚𝙡 𝙨𝙞𝙨𝙩𝙚𝙢𝙖 𝙚𝙨:
+
+Mascara →  Sensor MQ135  →  jumpers  →  DAQ  → MATLAB → Archivo .mat
+
+La DAQ digitaliza la señal analógica del sensor MQ135. MATLAB recibe esos valores, los grafica y los almacena.
