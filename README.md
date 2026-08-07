@@ -101,6 +101,8 @@ La DAQ digitaliza la señal analógica del sensor MQ135. MATLAB recibe esos valo
 
 <h2 align="center">𝘼𝙣𝙖𝙡𝙞𝙨𝙞𝙨 𝙙𝙚 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤𝙨</h2>
 
+<img width="1385" height="912" alt="Figure_14" src="https://github.com/user-attachments/assets/fcab9d21-e951-458f-8c18-8df53d52b9de" />
+
 𝙎𝙚𝙣̃𝙖𝙡 𝙧𝙚𝙨𝙥𝙞𝙧𝙖𝙩𝙤𝙧𝙞𝙖 𝙚𝙣 𝙧𝙚𝙡𝙖𝙟𝙖𝙘𝙞𝙤́𝙣
 
 La señal presenta un comportamiento periódico, con aproximadamente cinco ciclos respiratorios en 30 segundos, lo que corresponde a una frecuencia cercana a 10 respiraciones por minuto. Este valor se encuentra dentro del rango esperado para una persona en estado de reposo, lo que indica que el sistema permitió registrar adecuadamente el patrón respiratorio.
