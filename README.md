@@ -104,7 +104,130 @@ Mascara →  Sensor MQ135  →  jumpers  →  DAQ  → MATLAB → Archivo .mat
 La DAQ digitaliza la señal analógica del sensor MQ135. MATLAB recibe esos valores, los grafica y los almacena.
 
 𝙀𝙭𝙥𝙡𝙞𝙘𝙖𝙘𝙞𝙤́𝙣 𝙙𝙚𝙡 𝙘𝙤𝙙𝙞𝙜𝙤
-(samuel)
+El propósito de este programa, creado en MATLAB, es obtener y examinar las señales respiratorias mediante un sensor que está conectado a una tarjeta de adquisición de datos NI USB-6002. Se efectúan dos mediciones: una cuando la persona está relajada y otra durante el habla de esta. Las señales se procesan más tarde con el fin de calcular la frecuencia respiratoria a través de dos técnicas: análisis espectral utilizando la Transformada Rápida de Fourier (FFT) y detección de picos.
+```
+clc; clear; close all;
+dq = daq("ni");
+addinput(dq, "Dev1", "ai0", "Voltage");
+dq.Rate = 100; 
+tiempo_medicion = 30;
+```
+```
+% 1. MEDICIÓN EN RELAJACIÓN
+disp("Preparar sujeto en reposo")
+pause(3)
+disp("Adquisición en RELAJACIÓN")
+datos_relajacion = read(dq, seconds(tiempo_medicion));
+
+% 2. MEDICIÓN EN HABLA
+disp("Preparar sujeto para HABLA")
+pause(3)
+disp("Adquisición en HABLA")
+datos_habla = read(dq, seconds(tiempo_medicion));
+```
+```
+
+% 3. EXTRACCIÓN DE SEÑALES
+t_r = datos_relajacion.Time;
+x_r = datos_relajacion.Dev1_ai0;
+t_h = datos_habla.Time;
+x_h = datos_habla.Dev1_ai0;
+```
+
+```
+% 5. GRÁFICAS
+figure
+subplot(2,1,1)
+plot(t_r, x_r)
+title('Señal Respiratoria - Relajación')
+xlabel('Tiempo (s)')
+ylabel('Voltaje (V)')
+grid on
+
+subplot(2,1,2)
+plot(t_h, x_h)
+title('Señal Respiratoria - Habla')
+xlabel('Tiempo (s)')
+ylabel('Voltaje (V)')
+grid on
+```
+```
+FRECUENCIA RESPIRATORIA (TIEMPO - PICOS)
+[pks_r, locs_r] = findpeaks(x_r, t_r);
+[pks_h, locs_h] = findpeaks(x_h, t_h);
+dur_r = max(t_r) - min(t_r);
+dur_h = max(t_h) - min(t_h);
+frec_r = length(pks_r) / dur_r; % Hz
+frec_h = length(pks_h) / dur_h;
+rpm_r = frec_r * 60;
+rpm_h = frec_h * 60;
+```
+```
+% 7. FRECUENCIA DOMINANTE (FFT)
+fs = dq.Rate;
+%  RELAJACIÓN 
+N_r = length(x_r);
+Y_r = fft(x_r);
+f_r = (0:N_r-1)*(fs/N_r);
+mag_r = abs(Y_r);
+half_r = 1:floor(N_r/2);
+[~, idx_r] = max(mag_r(half_r));
+f_dom_r = f_r(idx_r);
+
+%  HABLA 
+N_h = length(x_h);
+Y_h = fft(x_h);
+f_h = (0:N_h-1)*(fs/N_h);
+mag_h = abs(Y_h);
+half_h = 1:floor(N_h/2);
+[~, idx_h] = max(mag_h(half_h));
+f_dom_h = f_h(idx_h);
+```
+**Resultados**
+>El programa muestra en pantalla:
+Con el propósito de relajarse:
+-Frecuencia respiratoria determinada a través de los picos.
+-Frecuencia predominante lograda a través de la FFT.
+
+Para hablar:
+-Frecuencia de la respiración por picos.
+-Frecuencia predominante por medio de la FFT.
+
+Esto posibilita la comparación de ambos métodos estimativos.
+```
+% RESULTADOS
+disp("========== RESULTADOS ==========")
+fprintf("\n--- RELAJACIÓN ---\n")
+fprintf("Frecuencia (picos): %.2f rpm\n", rpm_r)
+fprintf("Frecuencia dominante: %.3f Hz (%.2f rpm)\n", f_dom_r, f_dom_r*60)
+fprintf("\n--- HABLA ---\n")
+fprintf("Frecuencia (picos): %.2f rpm\n", rpm_h)
+fprintf("Frecuencia dominante: %.3f Hz (%.2f rpm)\n", f_dom_h, f_dom_h*60)
+```
+> Se generan dos gráficos del espectro (relajación y habla)
+```
+% ESPECTRO FRECUENCIAL
+figure;
+plot(f_r(half_r), mag_r(half_r))
+title('Espectro - Relajación')
+xlabel('Frecuencia (Hz)')
+ylabel('Magnitud')
+grid on
+figure;
+plot(f_h(half_h), mag_h(half_h))
+title('Espectro - Habla')
+xlabel('Frecuencia (Hz)')
+ylabel('Magnitud')
+grid on
+```
+GUARDADO DE DATOS
+Se almacena toda la información en un archivo MATLAB (.mat) y exporta cada adquisición en formato CSV, permitiendo su análisis posterior en otras herramientas como Excel o Python.
+```
+save("Respiracion_MQ135_NI6002.mat","datos_relajacion","datos_habla","rpm_r","rpm_h","f_dom_r","f_dom_h")
+writetable(datos_relajacion, "Relajacion.csv")
+writetable(datos_habla, "Habla.csv")
+```
+
 
 <h2 align="center">𝘼𝙣𝙖𝙡𝙞𝙨𝙞𝙨 𝙙𝙚 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤𝙨</h2>
 
