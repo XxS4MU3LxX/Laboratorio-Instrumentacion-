@@ -119,3 +119,13 @@ Durante el habla, la frecuencia respiratoria deja de ser constante y los ciclos 
 + ¿Cuáles serían las ventajas y desventajas de emplear múltiples sensores para el monitoreo del proceso respiratorio? ¿Cuáles podrían ser las razones?
   
 > 
+
+
+<h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 𝘾 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
+
+𝘾𝙤𝙣𝙘𝙡𝙪𝙨𝙞𝙤𝙣𝙚𝙨
+1.Se logró adquirir la señal respiratoria utilizando el sensor MQ-135 y la tarjeta de adquisición de datos NI USB-6002, evidenciando que el montaje permitió registrar las variaciones del aire exhalado.
+
+2.Los patrones respiratorios variaron según la condición evaluada. En estado de relajación se obtuvo una señal periódica y estable, mientras que durante el habla la señal presentó una mayor variabilidad debido a los cambios en el flujo de aire requeridos para la fonación.
+
+3.La frecuencia respiratoria estimada en reposo fue cercana a 10 respiraciones por minuto, valor que se encuentra dentro del rango fisiológico esperado, lo que indica que el sistema fue capaz de identificar adecuadamente los ciclos respiratorios.
