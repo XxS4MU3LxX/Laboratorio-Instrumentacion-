@@ -32,27 +32,31 @@ La respiración es un proceso vital para el funcionamiento normal en todos los n
 >
 
 <img width="1402" height="1122" alt="image" src="https://github.com/user-attachments/assets/f8e681f5-f74f-4a74-875a-af07e903e475" />
-
+>
+>
 
 
 𝙎𝙚𝙣𝙨𝙤𝙧 𝙚𝙨𝙘𝙤𝙜𝙞𝙙𝙤 
-
-
+>
 Se seleccionó el sensor MQ-135 debido a que es capaz de detectar las variaciones en la concentración de CO₂ presentes en el aire exhalado, generando una señal analógica que permite identificar los ciclos de inspiración y espiración. A partir de estas variaciones es posible extraer el patrón respiratorio y calcular la frecuencia respiratoria.
-
+>
 El monitoreo respiratorio alternativo utilizado era la galga extensiométrica, la cual mide de forma indirecta la respiración a través de la expansión y contracción del tórax  Sin embargo, este método requiere el uso de una banda ajustada al cuerpo y su señal puede verse afectada por movimientos del participante, cambios de postura o desplazamientos de la banda durante la adquisición.
-
+>
 En comparacion, el MQ-135 mide directamente los cambios en la composición del aire exhalado dentro de la máscara, lo que permite obtener una señal representativa del proceso respiratorio sin depender de la deformación mecánica del tórax. Además, su integración con la máscara de nebulizacion utilizada en el montaje, presenta un bajo costo y proporciona una salida analógica compatible con el DAQ (NI USB-6002), facilitando el procesamiento de la señal en MATLAB.
-
+>
 Aunque el sensor no está diseñado como un sensor médico ni permite cuantificar con precisión la concentración de CO₂, su respuesta es suficiente para detectar los cambios periódicos asociados a la respiración. Por ello, se consideró la opción más adecuada para este laboratorio, ya que permite obtener de forma confiable el patrón respiratorio y analizar las modificaciones producidas durante el habla.
-
+>
+>
 <img width="381" height="492" alt="image" src="https://github.com/user-attachments/assets/b69d795f-27fe-4837-9808-36ea78e3302e" />
-
+>
+>
 𝘾𝙤𝙣𝙨𝙚𝙣𝙩𝙞𝙢𝙞𝙚𝙣𝙩𝙤 𝙞𝙣𝙛𝙤𝙧𝙢𝙖𝙙𝙤 𝙙𝙚𝙡 𝙥𝙖𝙧𝙩𝙞𝙘𝙞𝙥𝙖𝙣𝙩𝙚 
-
+>
 Debido a que la práctica involucró la adquisición de datos fisiológicos mediante el registro de la frecuencia respiratoria utilizando un sensor MQ-135 y una máscara, fue necesario obtener el consentimiento informado del participante. Este documento garantiza que la persona comprendió el objetivo del experimento, el procedimiento a realizar, el uso académico de los datos recolectados y la confidencialidad de la información, asegurando una participación libre y voluntaria de acuerdo con los principios éticos de la investigación.
+>
+>
 <img width="1130" height="1535" alt="image" src="https://github.com/user-attachments/assets/aa444c3b-a480-4891-9a1a-c57afc1d2bf5" />
-
+>
 
 𝙈𝙤𝙣𝙩𝙖𝙟𝙚 𝙚𝙭𝙥𝙚𝙧𝙞𝙢𝙚𝙣𝙩𝙖𝙡
 
