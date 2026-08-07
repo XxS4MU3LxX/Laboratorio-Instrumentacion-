@@ -28,7 +28,14 @@ La respiración es un proceso vital para el funcionamiento normal en todos los n
 
 𝙎𝙚𝙣𝙨𝙤𝙧 𝙚𝙨𝙘𝙤𝙜𝙞𝙙𝙤 
 
-(samuel habla sobbre porque fue ese se sensor)
+
+Se seleccionó el sensor MQ-135 debido a que es capaz de detectar las variaciones en la concentración de CO₂ presentes en el aire exhalado, generando una señal analógica que permite identificar los ciclos de inspiración y espiración. A partir de estas variaciones es posible extraer el patrón respiratorio y calcular la frecuencia respiratoria.
+
+El monitoreo respiratorio alternativo utilizado era la galga extensiométrica, la cual mide de forma indirecta la respiración a través de la expansión y contracción del tórax  Sin embargo, este método requiere el uso de una banda ajustada al cuerpo y su señal puede verse afectada por movimientos del participante, cambios de postura o desplazamientos de la banda durante la adquisición.
+
+En comparacion, el MQ-135 mide directamente los cambios en la composición del aire exhalado dentro de la máscara, lo que permite obtener una señal representativa del proceso respiratorio sin depender de la deformación mecánica del tórax. Además, su integración con la máscara de nebulizacion utilizada en el montaje, presenta un bajo costo y proporciona una salida analógica compatible con el DAQ (NI USB-6002), facilitando el procesamiento de la señal en MATLAB.
+
+Aunque el sensor no está diseñado como un sensor médico ni permite cuantificar con precisión la concentración de CO₂, su respuesta es suficiente para detectar los cambios periódicos asociados a la respiración. Por ello, se consideró la opción más adecuada para este laboratorio, ya que permite obtener de forma confiable el patrón respiratorio y analizar las modificaciones producidas durante el habla.
 
 <img width="381" height="492" alt="image" src="https://github.com/user-attachments/assets/b69d795f-27fe-4837-9808-36ea78e3302e" />
 
