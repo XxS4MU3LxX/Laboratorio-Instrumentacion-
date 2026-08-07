@@ -67,7 +67,7 @@ Durante la respiración normal en reposo:
 
 + La amplitud fue constante.
 
-+ El conteo manual permitió estimar una frecuencia aproximada de ___ respiraciones por minuto.
++ El conteo manual permitió estimar una frecuencia aproximada de 12 respiraciones por minuto.
 
 𝘿𝙪𝙧𝙖𝙣𝙩𝙚 𝙚𝙡 𝙝𝙖𝙗𝙡𝙖
 
