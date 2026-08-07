@@ -95,3 +95,16 @@ El objetivo del script en MATLAB es:
 Mascara →  Sensor MQ135  →  jumpers  →  DAQ  → MATLAB → Archivo .mat
 
 La DAQ digitaliza la señal analógica del sensor MQ135. MATLAB recibe esos valores, los grafica y los almacena.
+
+𝙀𝙭𝙥𝙡𝙞𝙘𝙖𝙘𝙞𝙤́𝙣 𝙙𝙚𝙡 𝙘𝙤𝙙𝙞𝙜𝙤
+(samuel)
+
+<h2 align="center">𝘼𝙣𝙖𝙡𝙞𝙨𝙞𝙨 𝙙𝙚 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤𝙨</h2>
+
+𝙎𝙚𝙣̃𝙖𝙡 𝙧𝙚𝙨𝙥𝙞𝙧𝙖𝙩𝙤𝙧𝙞𝙖 𝙚𝙣 𝙧𝙚𝙡𝙖𝙟𝙖𝙘𝙞𝙤́𝙣
+
+La señal presenta un comportamiento periódico, con aproximadamente cinco ciclos respiratorios en 30 segundos, lo que corresponde a una frecuencia cercana a 10 respiraciones por minuto. Este valor se encuentra dentro del rango esperado para una persona en estado de reposo, lo que indica que el sistema permitió registrar adecuadamente el patrón respiratorio.
+
+𝙎𝙚𝙣̃𝙖𝙡 𝙧𝙚𝙨𝙥𝙞𝙧𝙖𝙩𝙤𝙧𝙞𝙖 𝙙𝙪𝙧𝙖𝙣𝙩𝙚 𝙚𝙡 𝙝𝙖𝙗𝙡𝙖
+
+Durante el habla, la frecuencia respiratoria deja de ser constante y los ciclos presentan una duración variable. Esto se debe a que la respiración se adapta a las necesidades de la fonación, generando pausas y espiraciones prolongadas que modifican el patrón respiratorio. Como resultado, la frecuencia es menos uniforme y la señal presenta una menor periodicidad.
