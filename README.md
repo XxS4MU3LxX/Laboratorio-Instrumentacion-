@@ -105,6 +105,9 @@ La DAQ digitaliza la señal analógica del sensor MQ135. MATLAB recibe esos valo
 
 𝙀𝙭𝙥𝙡𝙞𝙘𝙖𝙘𝙞𝙤́𝙣 𝙙𝙚𝙡 𝙘𝙤𝙙𝙞𝙜𝙤
 El propósito de este programa, creado en MATLAB, es obtener y examinar las señales respiratorias mediante un sensor que está conectado a una tarjeta de adquisición de datos NI USB-6002. Se efectúan dos mediciones: una cuando la persona está relajada y otra durante el habla de esta. Las señales se procesan más tarde con el fin de calcular la frecuencia respiratoria a través de dos técnicas: análisis espectral utilizando la Transformada Rápida de Fourier (FFT) y detección de picos.
+>
+Inicialización del sistema y la configuración de la adquisición de datos.
+>
 ```
 clc; clear; close all;
 dq = daq("ni");
@@ -112,30 +115,55 @@ addinput(dq, "Dev1", "ai0", "Voltage");
 dq.Rate = 100; 
 tiempo_medicion = 30;
 ```
+>
+El programa muestra un mensaje para preparar al sujeto, espera tres segundos y registra la señal respiratoria durante 30 segundos, posteriormente se repite el mismo procedimiento, pero esta vez el sujeto realiza una actividad de habla durante la adquisición.
+>
 ```
-% 1. MEDICIÓN EN RELAJACIÓN
+% MEDICIÓN EN RELAJACIÓN
 disp("Preparar sujeto en reposo")
 pause(3)
 disp("Adquisición en RELAJACIÓN")
 datos_relajacion = read(dq, seconds(tiempo_medicion));
 
-% 2. MEDICIÓN EN HABLA
+% MEDICIÓN EN HABLA
 disp("Preparar sujeto para HABLA")
 pause(3)
 disp("Adquisición en HABLA")
 datos_habla = read(dq, seconds(tiempo_medicion));
 ```
+Los datos obtenidos se separan en:
+>
+> Tiempo (Time): eje temporal de la adquisición.
+> Voltaje (Dev1_ai0): amplitud de la señal respiratoria registrada.
+>
+Se generan dos conjuntos de datos:
+>
+Relajación.
+Habla.
+>
 ```
 
-% 3. EXTRACCIÓN DE SEÑALES
+% EXTRACCIÓN DE SEÑALES
 t_r = datos_relajacion.Time;
 x_r = datos_relajacion.Dev1_ai0;
 t_h = datos_habla.Time;
 x_h = datos_habla.Dev1_ai0;
 ```
+>
+Visualización de las señales
+>
+>Se construyen dos gráficos para hacer una comparación visual de las dos condiciones.
+>
+Cada gráfico muestra:
+>
+> Eje X: tiempo (en segundos).
+> Eje Y: voltaje que se ha medido.
+> Cuadrícula para simplificar la interpretación.
 
+Esta comparación posibilita la observación de las diferencias en el patrón respiratorio entre el habla y el estado de relajación.
+>
 ```
-% 5. GRÁFICAS
+% GRÁFICAS
 figure
 subplot(2,1,1)
 plot(t_r, x_r)
@@ -151,9 +179,9 @@ xlabel('Tiempo (s)')
 ylabel('Voltaje (V)')
 grid on
 ```
-La función findpeaks identifica los máximos locales de la señal, cada pico representa aproximadamente un ciclo respiratorio.
-
-Posteriormente se calcula la frecuencia.
+>
+La función **findpeaks** identifica los máximos locales de la señal, cada pico representa aproximadamente un ciclo respiratorio. Posteriormente se calcula la frecuencia.
+>
 ```
 FRECUENCIA RESPIRATORIA (TIEMPO - PICOS)
 [pks_r, locs_r] = findpeaks(x_r, t_r);
@@ -165,8 +193,9 @@ frec_h = length(pks_h) / dur_h;
 rpm_r = frec_r * 60;
 rpm_h = frec_h * 60;
 ```
+>
 Para complementar el análisis temporal se emplea la Transformada Rápida de Fourier, donde la FFT transforma la señal del dominio del tiempo al dominio de la frecuencia.
-
+>
 
 ```
 % FRECUENCIA DOMINANTE (FFT)
@@ -190,16 +219,21 @@ half_h = 1:floor(N_h/2);
 f_dom_h = f_h(idx_h);
 ```
 **Resultados**
-> El programa muestra en pantalla:
-> Con el propósito de relajarse:
+>
+El programa muestra en pantalla:
+>
+>Con el propósito de relajarse:
+>
 -Frecuencia respiratoria determinada a través de los picos.
 -Frecuencia predominante lograda a través de la FFT.
-
+>
 > Para hablar:
+>
 -Frecuencia de la respiración por picos.
 -Frecuencia predominante por medio de la FFT.
 
 Esto posibilita la comparación de ambos métodos estimativos.
+>
 ```
 % RESULTADOS
 disp("========== RESULTADOS ==========")
