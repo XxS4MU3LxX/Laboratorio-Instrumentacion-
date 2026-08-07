@@ -113,4 +113,6 @@ Durante el habla, la frecuencia respiratoria deja de ser constante y los ciclos 
 
 <h2 align="center">𝙋𝙧𝙚𝙜𝙪𝙣𝙩𝙖𝙨</h2>
 
++ ¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?
+  
 > **Los patrones y las frecuencias respiratorias fueron diferentes en cada caso.** En la condición de relajación se observó un patrón respiratorio regular y periódico, con una frecuencia aproximada de **12 respiraciones por minuto**. En cambio, durante el habla la señal presentó una menor periodicidad y una frecuencia variable, debido a las pausas y modificaciones del flujo de aire necesarias para la producción de la voz. Estas diferencias se deben a que, en reposo, la respiración mantiene un ritmo estable, mientras que durante el habla el sistema respiratorio ajusta continuamente la inspiración y la espiración para permitir la fonación, alterando tanto el patrón como la frecuencia respiratoria.
