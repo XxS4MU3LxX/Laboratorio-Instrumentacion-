@@ -1,7 +1,7 @@
 ## Laboratorio_1_Monitoreo del patrón y frecuencia respiratoria 
 # **Integrantes**
 >
-* María Angélica VargasSaldaña
+* María Angélica Vargas Saldaña
 * Samuel Esteban Fonseca Luna
 * Laura Daniela Triana Molano
 
