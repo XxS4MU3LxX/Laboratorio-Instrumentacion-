@@ -291,19 +291,19 @@ Durante el habla, la frecuencia respiratoria deja de ser constante y los ciclos 
 > 
 **VENTAJAS**
 > 
-El empleo de diversos sensores posibilita mejorar la **exactitud** y fiabilidad de las mediciones al fusionar distintas variables fisiológicas. Por ejemplo, el empleo simultáneo de una galva de presión para identificar el movimiento del tórax y un sensor de gases (MQ135) para medir el c02 exhalado en cada respiración, posibilita verificar la respiración desde dos perspectivas diferentes, lo cual brinda una mayor seguridad respecto a la medición precisa de la actividad respiratoria.
+>El empleo de diversos sensores posibilita mejorar la **exactitud** y fiabilidad de las mediciones al fusionar distintas variables fisiológicas. Por ejemplo, el empleo simultáneo de una galva de presión para identificar el movimiento del tórax y un sensor de gases (MQ135) para medir el c02 exhalado en cada respiración, posibilita verificar la respiración desde dos perspectivas diferentes, lo cual brinda una mayor seguridad respecto a la medición precisa de la actividad respiratoria.
 >
-Otro beneficio significativo es que la información adquirida es más completa y puede compararse entre los distintos sensores. Un solo sensor brinda datos restringidos, pero la combinación de diversas señales permite que se detecten sucesos como patrones respiratorios irregulares o la apnea del sueño, puesto que estos pueden ser identificados con más exactitud cuando se correlaciona la información que llega de distintos orígenes.
+>Otro beneficio significativo es que la información adquirida es más completa y puede compararse entre los distintos sensores. Un solo sensor brinda datos restringidos, pero la combinación de diversas señales permite que se detecten sucesos como patrones respiratorios irregulares o la apnea del sueño, puesto que estos pueden ser identificados con más exactitud cuando se correlaciona la información que llega de distintos orígenes.
 >
-Además el uso de múltiples sensores, además, fortalece el sistema. Si uno de los sensores tiene un error o reporta información incorrecta, los demás siguen tomando mediciones, lo que asegura la continuidad del monitoreo y previene que se pierda información.
+>Además el uso de múltiples sensores, además, fortalece el sistema. Si uno de los sensores tiene un error o reporta información incorrecta, los demás siguen tomando mediciones, lo que asegura la continuidad del monitoreo y previene que se pierda información.
 
 **DESVENTAJAS**
 >
-El uso de múltiples sensores también presenta algunas desventajas.En primer lugar, incrementa el costo total del sistema debido a la incorporación de más componentes electrónicos. Asimismo, aumenta la complejidad del diseño, ya que es necesario sincronizar las señales provenientes de cada sensor y procesarlas de manera conjunta, lo que requiere algoritmos más elaborados y una mayor cantidad de líneas de programación.
+>El uso de múltiples sensores también presenta algunas desventajas.En primer lugar, incrementa el costo total del sistema debido a la incorporación de más componentes electrónicos. Asimismo, aumenta la complejidad del diseño, ya que es necesario sincronizar las señales provenientes de cada sensor y procesarlas de manera conjunta, lo que requiere algoritmos más elaborados y una mayor cantidad de líneas de programación.
 >
-Otra desventaja es el aumento en el consumo de energía, ya que cada sensor demanda alimentación eléctrica para su funcionamiento. Este aspecto resulta especialmente crítico en sistemas portátiles o alimentados por baterías, donde la autonomía es un factor importante.
+>Otra desventaja es el aumento en el consumo de energía, ya que cada sensor demanda alimentación eléctrica para su funcionamiento. Este aspecto resulta especialmente crítico en sistemas portátiles o alimentados por baterías, donde la autonomía es un factor importante.
 >
-Además, el procesamiento de múltiples señales implica una mayor carga computacional, debido a la necesidad de implementar algoritmos más complejos para el análisis, filtrado y fusión de los datos. Finalmente, pueden presentarse inconsistencias entre las mediciones de los distintos sensores, ya que cada uno posee características, niveles de sensibilidad y errores propios. Por esta razón, es indispensable realizar un proceso de calibración individual para garantizar que las mediciones sean precisas y consistentes.
+>Además, el procesamiento de múltiples señales implica una mayor carga computacional, debido a la necesidad de implementar algoritmos más complejos para el análisis, filtrado y fusión de los datos. Finalmente, pueden presentarse inconsistencias entre las mediciones de los distintos sensores, ya que cada uno posee características, niveles de sensibilidad y errores propios. Por esta razón, es indispensable realizar un proceso de calibración individual para garantizar que las mediciones sean precisas y consistentes.
 
 
 
