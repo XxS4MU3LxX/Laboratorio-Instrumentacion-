@@ -105,8 +105,12 @@ La DAQ digitaliza la señal analógica del sensor MQ135. MATLAB recibe esos valo
 
 𝙎𝙚𝙣̃𝙖𝙡 𝙧𝙚𝙨𝙥𝙞𝙧𝙖𝙩𝙤𝙧𝙞𝙖 𝙚𝙣 𝙧𝙚𝙡𝙖𝙟𝙖𝙘𝙞𝙤́𝙣
 
-La señal presenta un comportamiento periódico, con aproximadamente cinco ciclos respiratorios en 30 segundos, lo que corresponde a una frecuencia cercana a 10 respiraciones por minuto. Este valor se encuentra dentro del rango esperado para una persona en estado de reposo, lo que indica que el sistema permitió registrar adecuadamente el patrón respiratorio.
+La señal presenta un comportamiento periódico, con aproximadamente cinco ciclos respiratorios en 30 segundos, lo que corresponde a una frecuencia cercana a 12 respiraciones por minuto. Este valor se encuentra dentro del rango esperado para una persona en estado de reposo, lo que indica que el sistema permitió registrar adecuadamente el patrón respiratorio.
 
 𝙎𝙚𝙣̃𝙖𝙡 𝙧𝙚𝙨𝙥𝙞𝙧𝙖𝙩𝙤𝙧𝙞𝙖 𝙙𝙪𝙧𝙖𝙣𝙩𝙚 𝙚𝙡 𝙝𝙖𝙗𝙡𝙖
 
 Durante el habla, la frecuencia respiratoria deja de ser constante y los ciclos presentan una duración variable. Esto se debe a que la respiración se adapta a las necesidades de la fonación, generando pausas y espiraciones prolongadas que modifican el patrón respiratorio. Como resultado, la frecuencia es menos uniforme y la señal presenta una menor periodicidad.
+
+<h2 align="center">𝙋𝙧𝙚𝙜𝙪𝙣𝙩𝙖𝙨</h2>
+
+> **Los patrones y las frecuencias respiratorias fueron diferentes en cada caso.** En la condición de relajación se observó un patrón respiratorio regular y periódico, con una frecuencia aproximada de **12 respiraciones por minuto**. En cambio, durante el habla la señal presentó una menor periodicidad y una frecuencia variable, debido a las pausas y modificaciones del flujo de aire necesarias para la producción de la voz. Estas diferencias se deben a que, en reposo, la respiración mantiene un ritmo estable, mientras que durante el habla el sistema respiratorio ajusta continuamente la inspiración y la espiración para permitir la fonación, alterando tanto el patrón como la frecuencia respiratoria.
