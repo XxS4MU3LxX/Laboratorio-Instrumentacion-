@@ -54,25 +54,25 @@ La tarjeta de adquisición de datos se conectó al computador mediante un cable 
 
 Durante la respiración normal en reposo:
 
-. La señal presentó un comportamiento periódico y relativamente estable.
+*La señal presentó un comportamiento periódico y relativamente estable.
 
-. Se observaron ciclos regulares correspondientes a inhalación y exhalación.
+*Se observaron ciclos regulares correspondientes a inhalación y exhalación.
 
-. La amplitud fue constante.
+*La amplitud fue constante.
 
-. El conteo manual permitió estimar una frecuencia aproximada de ___ respiraciones por minuto.
+*El conteo manual permitió estimar una frecuencia aproximada de ___ respiraciones por minuto.
 
 𝘿𝙪𝙧𝙖𝙣𝙩𝙚 𝙚𝙡 𝙝𝙖𝙗𝙡𝙖
 
 Mientras el sujeto leía en voz alta:
 
-. La señal mostró mayor irregularidad.
+*La señal mostró mayor irregularidad.
 
-. Se observaron variaciones en la amplitud.
+*Se observaron variaciones en la amplitud.
 
-. Se prolongaron las fases de espiración (debido a la fonación).
+*Se prolongaron las fases de espiración (debido a la fonación).
 
-. La frecuencia respiratoria presentó cambios respecto al estado de reposo.
+*La frecuencia respiratoria presentó cambios respecto al estado de reposo.
 
 Esto confirma que el habla modifica el patrón respiratorio al introducir un control voluntario sobre el proceso automático de respiración.
 
@@ -89,3 +89,7 @@ Visualizarla.
 Guardarla en un archivo .mat.
 
 Permitir análisis posterior (filtrado, FFT y cálculo de frecuencia respiratoria)
+El flujo del sistema es:
+
+Sensor → ESP32 (ADC 12 bits) → Arduino IDE → Serial USB → MATLAB → Archivo .mat
+La ESP32 digitaliza la señal analógica del sensor respiratorio y la envía como valores numéricos por puerto serial. MATLAB recibe esos valores, los grafica en tiempo real y los almacena.
