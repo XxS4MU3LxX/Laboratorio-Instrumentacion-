@@ -75,3 +75,17 @@ Mientras el sujeto leía en voz alta:
 . La frecuencia respiratoria presentó cambios respecto al estado de reposo.
 
 Esto confirma que el habla modifica el patrón respiratorio al introducir un control voluntario sobre el proceso automático de respiración.
+
+<h1 align="center"><i><b>𝐏𝐚𝐫𝐭𝐞 𝘽 𝐝𝐞𝐥 𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐨𝐫𝐢𝐨</b></i></h1>
+
+Este proyecto implementa un sistema de adquisición de señal respiratoria utilizando una DAQ, la cual captura el CO2 generada por un sensor MQ135 y envía los datos a MATLAB mediante comunicación serial.
+
+El objetivo del script en MATLAB es:
+
+Capturar la señal durante un tiempo definido.
+
+Visualizarla.
+
+Guardarla en un archivo .mat.
+
+Permitir análisis posterior (filtrado, FFT y cálculo de frecuencia respiratoria)
